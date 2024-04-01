@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InputForm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" >Paws and Tales</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link"  href="abousUs.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="homepage.html">The dogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="inputform.html">Need home?</a>
+              </li>
+            </ul>
+            
+            <a href="login.html" class="btn btn-outline-success">Register/LogIn</a>
+
+          </div>
+        </div>
+      </nav>
+
+      <div class="container bg-body-tertiary">
+            <div class="row justify-content-center">
+              <div class="col-md-9">
+                <h1 class="col-md-9 mt-3">Know a dog that needs a home?</h1>
+
+                Please fill out the form below to submit information about a dog that needs to be taken to an animal shelter.
+                 Provide the dog's name, breed, age, a brief description, and your contact information. 
+                 
+              </div>
+              <div class="col-md-9 mt-3">
+                <form action="/submit_dog_info" method="POST">
+                  <div class="mb-3">
+                    <label for="dog_name" class="form-label">Dog's Name:</label>
+                    <input type="text" class="form-control" id="dog_name" name="dog_name" required placeholder="Dora">
+                  </div>
+                  <div class="mb-3">
+                    <label for="dog_breed" class="form-label">Dog's Breed:</label>
+                    <input type="text" class="form-control" id="dog_breed" name="dog_breed" required placeholder="None / Pitbull">
+                  </div>
+                  <div class="mb-3">
+                    <label for="dog_age" class="form-label">Dog's Age:</label>
+                    <input type="number" class="form-control" id="dog_age" name="dog_age" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="contact_info" class="form-label">Destination:</label>
+                    <input type="text" class="form-control" id="contact_info" name="contact_info" required placeholder="123 Main Street, Anytown, State 12345">
+                  </div>
+                  <div class="mb-3">
+                    <label for="dog_description" class="form-label">Description:</label>
+                    <textarea class="form-control" id="dog_description" name="dog_description" rows="3" ></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contact_info" class="form-label">Contact Information:</label>
+                    <input type="text" class="form-control" id="contact_info" name="contact_info" required>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+              <div class="col-md-9 mt-3">
+                <p>Once submitted, our team will review the details and reach out to you if further information is needed.</p> 
+              </div>
+              <div class="col-md-9 mt-1">
+                <p>Thank you for helping us care for animals in need.</p>
+              </div>
+          
+        </div>
+      </div>
+      <footer class="bg-body-tertiary text-center">
+        <div class="container p-4">
+          <section class="mb-2">
+            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.facebook.com/" role="button">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </section>
+          <a href="#"><img class="icons mb-4 mx-2" src="img/pngtree-facebook-social-media-icon-png-image_6315968.png"></a>
+          <a href="#"><img class="icons mb-4 mx-2" src="img/145812.png"></a>
+          <a href="#"><img class="icons mb-4 mx-2" src="img/pngtree-three-dimensional-instagram-icon-png-image_6618437.png"></a>
+      
+         
+      
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2020 Copyright:
+          <a class="text-reset fw-bold">Paws and Tales</a>
+        </div>
+        
+      </footer>
+       
+    
+</body>
+</html>
