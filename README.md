@@ -5,6 +5,7 @@
 
 
 Проектот се состои од следниве страници:
+
 index.html - Почетна страна
 
 readMore.html - Страница за објава (при клик на копчето „Read more“ со наслов „Paws-itive Progress: 4 Years, 400 Lives Saved,330 Loving Adoptions“)
